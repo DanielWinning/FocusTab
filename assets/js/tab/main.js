@@ -8,30 +8,24 @@ function getGreeting(domElement)
 {
     let currentDate = new Date(),
         currentHour = currentDate.getHours(),
-        greeting = "";
+        greeting = "Good";
 
     if (currentHour < 12) {
-        greeting = "Good morning";
+        greeting = "morning";
     } else if (currentHour >= 12 && currentHour < 17) {
-        greeting = "Good afternoon";
+        greeting = "afternoon";
     } else {
-        greeting = "Good evening";
+        greeting = "evening";
     }
 
-    if (config.username !== "") {
-        greeting += `, ${config.username}`
-    }
-
-    document.querySelector(domElement).innerHTML = greeting;
+    document.querySelector(domElement).innerHTML = `${greeting}!`;
 }
 
 function show(domElement) {
     document.querySelector(domElement).classList.remove("hidden");
 }
 
-if (config.showGreeting) {
-    getGreeting("#greeting");
-}
+getGreeting("#greeting");
 
 window.setTimeout(() => {
     show(".content");
