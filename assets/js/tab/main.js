@@ -11,11 +11,11 @@ function getGreeting(domElement)
         greeting = "Good";
 
     if (currentHour < 12) {
-        greeting = "morning";
+        greeting += "morning";
     } else if (currentHour >= 12 && currentHour < 17) {
-        greeting = "afternoon";
+        greeting += "afternoon";
     } else {
-        greeting = "evening";
+        greeting += "evening";
     }
 
     document.querySelector(domElement).innerHTML = `${greeting}!`;
