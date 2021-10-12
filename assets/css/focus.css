@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(0,210,211);
+    background: radial-gradient(circle, rgba(0,210,211,1) 0%, rgba(29,209,161,1) 100%);
+}
+p {
+    padding: 5px;
+    text-align: center;
+    color: #222f3e;
+    font-weight: 600;
+}

@@ -1,15 +1,4 @@
 /**
- * Get the theme from config.js and load the appropriate stylesheet.
- *
- * @return void
- */
-function setupHead()
-{
-    let html = `<link rel="stylesheet" type="text/css" href="../assets/css/themes/${config.theme}.css">`;
-    document.querySelector("head").insertAdjacentHTML("beforeend", html);
-}
-
-/**
  * Displays a greeting based on your local time of day.
  *
  * @param domElement
@@ -39,12 +28,6 @@ function getGreeting(domElement)
 function show(domElement) {
     document.querySelector(domElement).classList.remove("hidden");
 }
-
-function removeClass(domElement, className) {
-    document.querySelector(domElement).classList.remove(className);
-}
-
-setupHead();
 
 if (config.showGreeting) {
     getGreeting("#greeting");

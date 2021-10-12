@@ -20,13 +20,6 @@ body {
     animation: grow 1s;
     animation-fill-mode: forwards;
 }
-p {
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-    margin: .5rem 0;
-    color: #ebebeb;
-}
 
 @-webkit-keyframes grow {
     100% {
