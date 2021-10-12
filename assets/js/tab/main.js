@@ -8,7 +8,7 @@ function getGreeting(domElement)
 {
     let currentDate = new Date(),
         currentHour = currentDate.getHours(),
-        greeting = "Good";
+        greeting = "Good ";
 
     if (currentHour < 12) {
         greeting += "morning";
