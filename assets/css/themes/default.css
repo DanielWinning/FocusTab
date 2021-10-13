@@ -17,6 +17,7 @@ body {
 .content h1 {
     color: #fff;
     font-weight: 800;
+    font-size: 3rem;
     animation: grow 1s;
     animation-fill-mode: forwards;
 }
