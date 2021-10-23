@@ -7,3 +7,5 @@ users.
 
 ![Screenshot](https://dannywinning.co.uk/assets/images/screenshot.png)
 
+| ![Icon](https://dannywinning.co.uk/assets/images/icon128.png) | ![Icon](https://dannywinning.co.uk/assets/images/icon64.png) |
+| ------------------------------------------------------------- | ------------------------------------------------------------ |
