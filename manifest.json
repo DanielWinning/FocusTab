@@ -7,19 +7,20 @@
   "action": {
     "default_popup": "index.html",
     "default_icon":{
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "64": "icon64.png",
-      "128": "icon128.png"
+      "16": "assets/images/icon16.png",
+      "32": "assets/images/icon32.png",
+      "64": "assets/images/icon64.png",
+      "128": "assets/images/icon128.png"
     }
   },
   "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "64": "icon64.png",
-    "128": "icon128.png"
+    "16": "assets/images/icon16.png",
+    "32": "assets/images/icon32.png",
+    "64": "assets/images/icon64.png",
+    "128": "assets/images/icon128.png"
   },
   "chrome_url_overrides": {
     "newtab": "/content/index.html"
-  }
+  },
+  "options_page": "options.html"
 }
