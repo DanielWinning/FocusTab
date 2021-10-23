@@ -1,9 +1,6 @@
 # Focus Tab
 
-Enjoy a distraction free new tab experience in Chrome and Edge.
+[![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab)
 
-### Attribution
-
-This project uses free icons from [Flat Icon](https://flaticon.com):
-
-- [Extension Icon](https://www.flaticon.com/free-icon/shining_599503)
+Enjoy a distraction free new tab experience with the Focus Tab Chrome extension. Particularly useful for Microsoft Edge 
+users.
