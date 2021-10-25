@@ -8,6 +8,3 @@ Replaces your new tab page with a clean, minimal and distraction free page.
 [Now live on the Chrome Extension Store](https://chrome.google.com/webstore/detail/focus-tab/deicnhfdmoaghjhompfakklkhgmejbpg).
 
 ![Screenshot](https://dannywinning.co.uk/assets/images/screenshot.png)
-
-| ![Icon](https://dannywinning.co.uk/assets/images/icon128.png) | ![Icon](https://dannywinning.co.uk/assets/images/icon64.png) |
-| ------------------------------------------------------------- | ------------------------------------------------------------ |
