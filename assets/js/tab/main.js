@@ -24,9 +24,10 @@ function getGreeting(domElement)
 
 function displayClock(greetingElement)
 {
-    chrome.storage.sync.get(["showClock", "username"]).then(response => {
+    chrome.storage.sync.get(["showClock", "username", "greetByName"]).then(response => {
         let showClock = response.showClock,
-            username = response.username;
+            username = response.username,
+            greetByName = response.greetByName;
 
         if (showClock !== undefined && showClock) {
             let clockElement = document.querySelector("#clock");
@@ -34,7 +35,7 @@ function displayClock(greetingElement)
             clockElement.innerHTML = getTimeString();
             clockElement.classList.remove("hidden");
         }
-        if (username !== undefined && username !== "") {
+        if (username !== undefined && username !== "" && greetByName !== undefined && greetByName) {
             let greetingHeading = document.querySelector(greetingElement);
             greetingHeading.innerHTML = greetingHeading.innerHTML.replace("!", "") + `, ${username}!`;
         }
