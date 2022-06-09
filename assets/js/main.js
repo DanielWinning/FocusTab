@@ -40,13 +40,18 @@ function displayClock(greetingElement) {
       greetingHeading.innerHTML = greetingHeading.innerHTML.replace("!", "") + ", ".concat(username, "!");
     }
   });
+  window.setInterval(function () {
+    var clockElement = document.querySelector("#clock");
+    clockElement.innerHTML = getTimeString();
+  }, 1000);
 }
 
 function getTimeString() {
   var date = new Date(),
       hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours(),
-      minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-  return hours + ":" + minutes;
+      minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes(),
+      seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+  return hours + ":" + minutes + ":" + seconds;
 }
 
 function show(domElement) {
