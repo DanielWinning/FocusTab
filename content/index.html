@@ -6,19 +6,23 @@
 
     <title>Focus Tab</title>
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/themes/default.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/base.css">
 </head>
 <body>
 
-<div class="content hidden">
-    <h1 class="scale-down">
-        <span id="greeting"></span>
-    </h1>
-    <div id="clock" class="scale-down hidden">
-        00:00
+    <div class="overlay">
+        <img src="../assets/images/spinner.gif" style="height: 200px; width: auto;" alt="Loading..." />
     </div>
-</div>
 
-<script src="../assets/js/tab/main.js"></script>
+    <div class="content hidden">
+        <h1 class="scale-down">
+            <span id="greeting"></span>
+        </h1>
+        <div id="clock" class="scale-down hidden">
+            00:00
+        </div>
+    </div>
+
+    <script src="../assets/js/tab/main.js"></script>
 </body>
 </html>

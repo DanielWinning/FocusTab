@@ -2,7 +2,7 @@
   transform: scale(0);
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 .flex {
   display: flex;
@@ -12,4 +12,14 @@
 }
 .justify-between {
   justify-content: space-between;
+}
+@-webkit-keyframes grow {
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes grow {
+  100% {
+    transform: scale(1);
+  }
 }

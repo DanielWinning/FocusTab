@@ -1,0 +1,41 @@
+@import "partials/reset";
+@import "partials/global";
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.content {
+  h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3rem;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+  }
+  #clock {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+  }
+}

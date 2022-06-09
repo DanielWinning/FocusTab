@@ -55,8 +55,20 @@ function show(domElement) {
     document.querySelector(domElement).classList.remove("hidden");
 }
 
-getGreeting("#greeting");
+function getStylesheet()
+{
+    chrome.storage.sync.get("theme").then(response => {
+        let theme = response.theme === undefined ? "default" : response.theme;
+        document.querySelector("head").insertAdjacentHTML("beforeend", `<link rel="stylesheet" type="text/css" href="../assets/css/themes/${theme}.css">`);
+        document.querySelector(".overlay").classList.add("hidden");
+    });
+}
 
-window.setTimeout(() => {
-    show(".content");
-}, 200);
+window.addEventListener("DOMContentLoaded", () => {
+    getStylesheet();
+    getGreeting("#greeting");
+
+    window.setTimeout(() => {
+        show(".content");
+    }, 200);
+});
