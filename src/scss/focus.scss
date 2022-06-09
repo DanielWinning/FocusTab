@@ -21,10 +21,12 @@ button {
     letter-spacing: 0.05rem;
     transition: all .4s ease;
     border: 1px solid #00d2d3;
+    border-radius: 5px;
 
     &:hover {
       color: #fff;
-      background: rgba(0,0,0,0.5);
+      background: #4d4d4d;
+      border-color: #4d4d4d;
     }
   }
 }

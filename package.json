@@ -4,8 +4,8 @@
   "description": "[![GitHub version](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab?style=for-the-badge)](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab?style=for-the-badge)",
   "main": "assets/js/src/index.js",
   "scripts": {
-    "build": "npx babel src --out-dir assets/js",
-    "watch": "npx babel src --watch --out-dir assets/js"
+    "build": "npx babel src/js --out-dir assets/js",
+    "watch": "npx babel src/js --watch --out-dir assets/js"
   },
   "repository": {
     "type": "git",
