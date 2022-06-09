@@ -3,7 +3,9 @@
   "description": "A distraction free new tab experience.",
   "version": "1.0.2",
   "manifest_version": 3,
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "index.html",
     "default_icon":{

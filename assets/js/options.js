@@ -1,11 +1,11 @@
+
 function saveOptions()
 {
     let showClock = document.querySelector("#display-clock-checkbox").checked;
-}
 
-function restoreOptions()
-{
-
+    chrome.storage.sync.set({
+        showClock: showClock
+    });
 }
 
 document.querySelector("#save-options").addEventListener("click", saveOptions);

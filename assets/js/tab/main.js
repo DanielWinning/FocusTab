@@ -19,6 +19,23 @@ function getGreeting(domElement)
     }
 
     document.querySelector(domElement).innerHTML = `${greeting}!`;
+    displayClock(domElement);
+}
+
+function displayClock(greetingElement)
+{
+    chrome.storage.sync.get(["showClock", "username"]).then(response => {
+        let showClock = response.showClock,
+            username = response.username;
+
+        if (showClock !== undefined && showClock) {
+            document.querySelector("#clock").classList.remove("hidden");
+        }
+        if (username !== undefined) {
+            let greetingHeading = document.querySelector(greetingElement);
+            greetingHeading.innerHTML = greetingHeading.innerHTML.replace("!", "") + `, ${username}!`;
+        }
+    });
 }
 
 function show(domElement) {
@@ -29,4 +46,4 @@ getGreeting("#greeting");
 
 window.setTimeout(() => {
     show(".content");
-}, 100);
+}, 200);
