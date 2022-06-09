@@ -1,4 +1,5 @@
 @import "partials/reset";
+@import "partials/global";
 
 body {
   background-color: #222f3e;
@@ -10,21 +11,6 @@ body {
   border: 1px #ebebeb solid;
   padding: 1.75rem;
   border-radius: 10px;
-  /*background: #fff;*/
-  /*box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;*/
-}
-
-.hidden {
-  display: none;
-}
-.flex {
-  display: flex;
-}
-.items-center {
-  align-items: center;
-}
-.justify-between {
-  justify-content: space-between;
 }
 
 .switch {
