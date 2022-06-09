@@ -60,7 +60,9 @@ function getStylesheet()
     chrome.storage.sync.get("theme").then(response => {
         let theme = response.theme === undefined ? "default" : response.theme;
         document.querySelector("head").insertAdjacentHTML("beforeend", `<link rel="stylesheet" type="text/css" href="../assets/css/themes/${theme}.css">`);
-        document.querySelector(".overlay").classList.add("hidden");
+        window.setTimeout(() => {
+            document.querySelector(".overlay").classList.add("hidden");
+        }, 250); // Artificial delay because it's slightly less annoying than the flash
     });
 }
 
