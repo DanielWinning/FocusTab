@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress HtmlFormInputWithoutLabel -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -10,19 +11,48 @@
 </head>
 <body>
 
+    <div style="text-align: center; padding-top: 3rem;">
+        <h1 style="color: #ebebeb">FocusTab Options</h1>
+    </div>
     <div class="container">
         <div>
-            <label for="display-clock-checkbox" class="checkbox">
+            <!--<label for="display-clock-checkbox" class="checkbox">
                 Display Clock?
                 <input type="checkbox" id="display-clock-checkbox" name="display_clock">
                 <span class="checkmark"></span>
-            </label>
+            </label>-->
+            <div class="flex items-center justify-between" style="margin: 1rem 0;">
+                <span style="font-size: 1rem; font-weight: 600; color: #ebebeb">
+                    What is your name?
+                </span>
+                <input type="text" placeholder="Your name" id="username-input" />
+            </div>
+            <div class="flex items-center justify-between" style="margin: 1rem 0;">
+                <span style="font-size: 1rem; font-weight: 600; color: #ebebeb">
+                    Greet by name?
+                </span>
+                <label class="switch" id="name-greeting-switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="flex items-center justify-between" style="margin: 1rem 0;">
+                <span style="font-size: 1rem; font-weight: 600; color: #ebebeb">
+                    Show clock?
+                </span>
+                <label class="switch" id="clock-switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
 
-            <div style="text-align: right">
+            <div style="display: flex; justify-content: end; align-items: center">
                 <button type="button" id="save-options">
                     Save
                 </button>
+                <img src="assets/images/spinner.gif" style="height: 60px; width: auto" alt="Saving extension settings" class="hidden" id="spinner">
             </div>
+            <div id="feedback"></div>
         </div>
     </div>
 

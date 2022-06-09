@@ -6,7 +6,7 @@
  */
 function getGreeting(domElement)
 {
-    let currentDate = new Date(),
+    let currentDate = new Date,
         currentHour = currentDate.getHours(),
         greeting = "Good ";
 
@@ -29,13 +29,25 @@ function displayClock(greetingElement)
             username = response.username;
 
         if (showClock !== undefined && showClock) {
-            document.querySelector("#clock").classList.remove("hidden");
+            let clockElement = document.querySelector("#clock");
+
+            clockElement.innerHTML = getTimeString();
+            clockElement.classList.remove("hidden");
         }
-        if (username !== undefined) {
+        if (username !== undefined && username !== "") {
             let greetingHeading = document.querySelector(greetingElement);
             greetingHeading.innerHTML = greetingHeading.innerHTML.replace("!", "") + `, ${username}!`;
         }
     });
+}
+
+function getTimeString()
+{
+    let date = new Date,
+        hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours(),
+        minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+
+    return hours + ":" + minutes;
 }
 
 function show(domElement) {

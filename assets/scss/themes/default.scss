@@ -10,12 +10,22 @@ body {
   background: linear-gradient(45deg, rgba(155,89,182,1) 0%, rgba(26,188,156,1) 100%);
   font-family: "Poppins", sans-serif;
 }
-.content h1 {
-  color: #fff;
-  font-weight: 800;
-  font-size: 3rem;
-  animation: grow 1s;
-  animation-fill-mode: forwards;
+.content {
+  h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3rem;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+  }
+  #clock {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+  }
 }
 @-webkit-keyframes grow {
   100% {
