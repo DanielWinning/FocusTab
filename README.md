@@ -1,4 +1,4 @@
-<img alt="Focus Tab Logo" src="assets/images/FocusTabLogo.svg" width="250px" height="110px">
+# Focus Tab
 
 [![GitHub version](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab?style=for-the-badge)](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab?style=for-the-badge)
 
