@@ -17,8 +17,17 @@ body {
 p {
   padding: 5px;
   color: #222f3e;
-  font-weight: 600;
-  font-size: .9rem;
+  font-size: .8rem;
+
+  a {
+    text-decoration: none;
+    color: #00d2d3;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 button {
   &#settings-page {

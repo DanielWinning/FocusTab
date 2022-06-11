@@ -1,1 +1,54 @@
-*{padding:0;margin:0;box-sizing:border-box}body{background:#fff;min-width:250px;padding:5px}#version-ref{color:#fff;margin-top:.25rem;border-radius:15px;background:#4d4d4d;padding:.25rem .5rem;font-size:.65rem;display:inline-block}p{padding:5px;color:#222f3e;font-weight:600;font-size:.9rem}button#settings-page{background:#00d2d3;color:#4d4d4d;padding:.5rem 1rem;cursor:pointer;font-size:.9rem;letter-spacing:.05rem;transition:all .4s ease;border:1px solid #00d2d3;border-radius:5px}button#settings-page:hover{color:#fff;background:#4d4d4d;border-color:#4d4d4d}/*# sourceMappingURL=focus.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  min-width: 250px;
+  padding: 5px;
+}
+
+#version-ref {
+  color: #fff;
+  margin-top: 0.25rem;
+  border-radius: 15px;
+  background: #4d4d4d;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.65rem;
+  display: inline-block;
+}
+
+p {
+  padding: 5px;
+  color: #222f3e;
+  font-size: 0.8rem;
+}
+p a {
+  text-decoration: none;
+  color: #00d2d3;
+  font-weight: bold;
+}
+p a:hover {
+  text-decoration: underline;
+}
+
+button#settings-page {
+  background: #00d2d3;
+  color: #4d4d4d;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  transition: all 0.4s ease;
+  border: 1px solid #00d2d3;
+  border-radius: 5px;
+}
+button#settings-page:hover {
+  color: #fff;
+  background: #4d4d4d;
+  border-color: #4d4d4d;
+}
+
+/*# sourceMappingURL=focus.css.map */
