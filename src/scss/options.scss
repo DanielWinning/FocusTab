@@ -2,17 +2,17 @@
 @import "partials/global";
 
 body {
-  background-color: #222f3e;
+  background-color: #292a31;
 }
 .container {
   width: 600px;
   max-width: 90%;
   margin: 2rem auto;
-  border: 1px #ebebeb solid;
+  background: #434852;
   padding: 1.5rem 2rem;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .switch {
   position: relative;
   display: inline-block;
@@ -98,9 +98,10 @@ button {
   cursor: pointer;
   transition: all .4s ease;
   border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 
   &:hover {
-    background-color: rgba(0,210,211,.75);
+    background-color: rgba(0,210,211,.45);
   }
 }
 
@@ -128,7 +129,7 @@ button {
     cursor: pointer;
     background-color: #00d2d3;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255,255,255,.3);
+    box-shadow: 0 0 10px rgba(88, 88, 88, 0.3);
     transition: all .4s ease;
     border: 3px solid #000;
 
