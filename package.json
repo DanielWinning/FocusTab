@@ -1,6 +1,6 @@
 {
   "name": "@dannyxcii/focus-tab",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "[![GitHub version](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab?style=for-the-badge)](https://img.shields.io/github/manifest-json/v/DanielWinning/FocusTab?style=for-the-badge)",
   "main": "assets/js/src/index.js",
   "scripts": {
